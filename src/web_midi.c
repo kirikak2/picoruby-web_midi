@@ -30,7 +30,7 @@ static double web_midi_js_now_us(void) { return 0; }
 #define KEEP
 #endif
 
-#define RING 1024   /* bytes per port, a power of two */
+#define RING 4096   /* bytes per port, a power of two: a SysEx dump of ~3 KB fits */
 
 typedef struct {
   char name[64];
